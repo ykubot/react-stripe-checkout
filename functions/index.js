@@ -30,10 +30,6 @@ const stripeCharge = (request, response) => {
 function send(response, statusCode, body) {
     response.send({
       statusCode,
-      headers: { 
-          "Access-Control-Allow-Origin": "*",
-          "Access-Control-Allow-Methods": "GET, HEAD, OPTIONS, POST"
-        },
       data: JSON.stringify(body)
     });
 }
